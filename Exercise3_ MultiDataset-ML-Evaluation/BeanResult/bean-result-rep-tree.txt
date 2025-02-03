@@ -1,0 +1,17 @@
+Percentage Split (20% test):
+              precision    recall  f1-score   support
+
+    BARBUNYA       0.91      0.80      0.85        25
+      BOMBAY       1.00      0.95      0.98        22
+        CALI       0.80      0.95      0.87        21
+    DERMASON       0.77      0.85      0.81        20
+       HOROZ       0.93      1.00      0.97        14
+       SEKER       0.95      1.00      0.97        18
+        SIRA       0.88      0.70      0.78        20
+
+    accuracy                           0.89       140
+   macro avg       0.89      0.89      0.89       140
+weighted avg       0.89      0.89      0.88       140
+
+Leave-One-Out Cross-Validation Accuracy: 0.8542857142857143
+10-Fold Cross-Validation Accuracy: 0.8585714285714285

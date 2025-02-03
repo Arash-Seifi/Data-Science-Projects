@@ -1,0 +1,14 @@
+Percentage Split (20% test):
+              precision    recall  f1-score   support
+
+           4       0.00      0.00      0.00         3
+           5       0.77      0.82      0.79        28
+           6       0.30      0.43      0.35         7
+           7       0.00      0.00      0.00         2
+
+    accuracy                           0.65        40
+   macro avg       0.27      0.31      0.29        40
+weighted avg       0.59      0.65      0.62        40
+
+Leave-One-Out Cross-Validation Accuracy: 0.745
+10-Fold Cross-Validation Accuracy: 0.7300000000000001

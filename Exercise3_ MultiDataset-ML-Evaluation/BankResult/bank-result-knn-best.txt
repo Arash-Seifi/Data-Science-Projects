@@ -1,0 +1,1 @@
+Best K for KNN: 4 with precision: 0.9
