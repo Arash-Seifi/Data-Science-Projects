@@ -3,6 +3,8 @@
 ## Overview
 
 This project implements real-time detection of thumbs-up and thumbs-down gestures using the TensorFlow Object Detection API. The system captures video input from a webcam, processes the frames using a trained object detection model, and visualizes the detected gestures in real time.
+![Thumsup](https://github.com/user-attachments/assets/b5da6bbc-1ed8-4b64-9665-fc340cf8bdfa)
+
 
 ## Features
 
