@@ -12,3 +12,11 @@ The set of scripts processes the MNIST dataset, first converting the raw images 
 
 ### Exercise3_MNIST- MultiDataset-ML-Evaluation
 The provided code implements machine learning classification and clustering techniques on three datasets: Bank, Wine, and Bean. It preprocesses categorical features using label encoding and evaluates models using multiple validation methods, including train-test split, Leave-One-Out (LOO), and 10-fold cross-validation. The classifiers used include Naïve Bayes, K-Nearest Neighbors (KNN), Random Forest, and Decision Tree (Rep Tree equivalent), with KNN being tuned for optimal performance. Additionally, K-Means and a variant with limited iterations (Farthest First Clustering) are used for unsupervised learning. The results, including accuracy scores, confusion matrices, and classification reports, are saved in separate text files for analysis.
+
+
+### Exercise4_HeartAttack-Prediction
+This code explores the use of the K-Nearest Neighbors (KNN) algorithm for predicting heart attack likelihood based on patient health data. The dataset, containing features like age, sex, chest pain type, and cholesterol levels, was preprocessed through feature-target separation and standardization to improve KNN’s performance. The initial model was trained and evaluated with an 80-20 train-test split, achieving reasonable accuracy. To enhance performance, K-Fold Cross-Validation (10-fold) was applied, and different values of k (neighbors) were tested to optimize classification accuracy and F1-score. The findings suggest that KNN is a viable model for heart attack prediction, with performance improvements achieved through careful parameter tuning and cross-validation.
+
+
+### Exercise5_Gesture-Identification
+This implementation demonstrates real-time detection of thumbs-up and thumbs-down gestures using a custom-trained TensorFlow model. The approach leverages the Object Detection API, pre-trained models, and OpenCV for live video feed processing. The model successfully identifies the gestures and overlays bounding boxes with labels on the detected objects. Future improvements could include expanding the dataset for better accuracy and optimizing the model for real-time performance.
