@@ -1,0 +1,76 @@
+The box plot is a graphical representation that provides a summary of the distribution of data for each feature. Here's what the box plot tells us:
+
+-Center: The line inside the box represents the median (50th percentile) of the data.
+-Spread: The box itself represents the interquartile range (IQR), which covers the middle 50% of the data. The lower (Q1) and upper (Q3) edges of the box represent the 25th and 75th percentiles, respectively.
+-Outliers: Any data points beyond the whiskers of the plot (which extend to 1.5 times the IQR from the edges of the box) are considered outliers and are plotted individually as points.
+Interpreting the box plot before handling outliers:
+
+If there are outliers present, they will be visible as individual points beyond the whiskers of the box plot, indicating data points that are significantly different from the rest of the data.
+The spread of the data (IQR) and the central tendency (median) can be observed for each feature.
+Interpreting the box plot after handling outliers:
+
+**Outliers should ideally be absent or significantly reduced compared to the plot before handling outliers.
+The spread of the data and the central tendency should remain similar to the plot before handling outliers, but with the extreme values removed or adjusted.
+
+By comparing the box plots before and after handling outliers, you can visually assess the effectiveness of the outlier handling process and understand how it has affected the distribution of data for each feature.
+
+-----------------------------
+correlation refers to a statistical measure that describes the extent to which two variables move in relation to each other.
+Correlation quantifies the degree to which two variables are related. The correlation coefficient ranges from -1 to 1.
+1 indicates a perfect positive correlation: as one variable increases, the other variable also increases.
+-1 indicates a perfect negative correlation: as one variable increases, the other variable decreases.
+0 indicates no correlation: the variables do not have a linear relationship.
+Correlation Coefficient:
+
+The correlation coefficient, often denoted as 𝑟
+r, is calculated using statistical methods.  the data.corr() function computes this coefficient for all pairs of features in the dataset.
+
+----------------------------------- Stack
+          A      B      C
+A     1.0    0.5    0.3
+B     0.5    1.0    0.8
+C     0.3    0.8    1.0
+
+
+
+A  A    1.0
+   B    0.5
+   C    0.3
+B  A    0.5
+   B    1.0
+   C    0.8
+C  A    0.3
+   B    0.8
+   C    1.0
+dtype: float64
+
+
+
+----------------------------------- Mode
+data = pd.DataFrame({
+    'A': [1, 2, 2, 3, 4],
+    'B': [5, 5, 6, 6, 6, 5],
+    'C': [7, 8, 8, 8, 9, 9]
+})
+
+col = 'B'
+mode_val = data[col].mode()[0]
+
+print("Mode of column 'B':", mode_val)
+
+---------------------------------- IQR
+Definition: The Interquartile Range (IQR) is a measure of statistical dispersion, or how spread out the values in a dataset are. It is specifically the range within which the middle 50% of the data points lie.
+
+Quartiles: To understand IQR, you first need to know about quartiles. Quartiles divide a dataset into four equal parts:
+
+First Quartile (Q1): This is the median of the first half of the data (the 25th percentile). It means that 25% of the data points are below Q1.
+Third Quartile (Q3): This is the median of the second half of the data (the 75th percentile). It means that 75% of the data points are below Q3.
+Calculation: The IQR is calculated as the difference between the third quartile (Q3) and the first quartile (Q1):
+
+IQR=Q3−Q1
+Example: Suppose we have the following dataset: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+To find Q1, we take the median of the first half: [1, 2, 3, 4]. The median of this subset is 2.5.
+To find Q3, we take the median of the second half: [6, 7, 8, 9]. The median of this subset is 7.5.
+Therefore, IQR = 7.5 - 2.5 = 5.
+Usage: The IQR is useful for identifying outliers and understanding the spread of the middle 50% of the data. Values that fall below Q1 - 1.5 * IQR or above Q3 + 1.5 * IQR are often considered outliers.

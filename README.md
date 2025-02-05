@@ -20,3 +20,7 @@ This code explores the use of the K-Nearest Neighbors (KNN) algorithm for predic
 
 ### Exercise5_Gesture-Identification
 This implementation demonstrates real-time detection of thumbs-up and thumbs-down gestures using a custom-trained TensorFlow model. The approach leverages the Object Detection API, pre-trained models, and OpenCV for live video feed processing. The model successfully identifies the gestures and overlays bounding boxes with labels on the detected objects. Future improvements could include expanding the dataset for better accuracy and optimizing the model for real-time performance.
+
+
+### Exercise6_DataPreprocessing-and-Optimization
+This project focuses on data preprocessing and optimization, ensuring data quality for analysis and machine learning. The scripts handle missing values by replacing them with the mode, manage outliers using the IQR method, and normalize features with Z-score normalization for consistency. Additionally, a correlation-based feature selection method removes redundant features, improving model efficiency. The result is a clean, standardized, and optimized dataset, ready for further analysis and predictive modeling.
