@@ -24,3 +24,7 @@ This implementation demonstrates real-time detection of thumbs-up and thumbs-dow
 
 ### Exercise6_DataPreprocessing-and-Optimization
 This project focuses on data preprocessing and optimization, ensuring data quality for analysis and machine learning. The scripts handle missing values by replacing them with the mode, manage outliers using the IQR method, and normalize features with Z-score normalization for consistency. Additionally, a correlation-based feature selection method removes redundant features, improving model efficiency. The result is a clean, standardized, and optimized dataset, ready for further analysis and predictive modeling.
+
+
+### Exercise7_MNIST-Classification-Report
+This report details the implementation of an MLP model for MNIST digit classification using TensorFlow and Keras. The dataset is preprocessed, and a validation set is extracted for model evaluation. The architecture includes three dense layers with ReLU and softmax activations. The model is trained using the Adam optimizer and categorical cross-entropy loss function, achieving high accuracy. Evaluation metrics, accuracy, and loss curves are analyzed, and sample predictions are visualized. Future enhancements may involve CNNs for improved performance.
