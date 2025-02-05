@@ -2,6 +2,7 @@
 
 ## Introduction
 This report outlines the process of building, training, and evaluating a Multilayer Perceptron (MLP) model for classifying handwritten digits from the MNIST dataset. The MNIST dataset consists of 28x28 grayscale images of digits (0-9) and is widely used for benchmarking machine learning models.
+![Pred2](https://github.com/user-attachments/assets/db4e22f5-ac47-41d7-8aa2-dca6348f5e68)
 
 ## Dataset Preparation
 The MNIST dataset was loaded and preprocessed as follows:
