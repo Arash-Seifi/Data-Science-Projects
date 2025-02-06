@@ -1,5 +1,6 @@
 # Data-Science-Projects
 This repository is a collection of my data science projects, where I apply various analysis and visualization techniques.
+
 ### Exercise1_UsingDifferentPlots
 This repository contains various data visualization examples using different types of charts, each suited for specific datasets and insights. The visualizations cover a wide range of data, including sales trends, weather conditions, sports performance, and market analysis. Each section includes a brief explanation of why a particular visualization was chosen and what insights it provides.
 
@@ -36,3 +37,7 @@ The code implements a genetic algorithm to optimize vehicle routing for package 
 
 ## Exercise9_Recommender-System
 This code implements a Q-learning-based movie recommender system that adapts to user preferences through interaction. It defines a list of movies, each associated with multiple genres and popularity scores, and models user preferences based on their genre interests. A reinforcement learning agent selects movies using an epsilon-greedy strategy, updating Q-values based on user feedback. The reward function assigns positive or negative scores depending on how well a recommendation matches the user's interests. The system interacts with the user, refines recommendations over multiple iterations, and ultimately suggests movies based on learned preferences.
+
+
+## Exercise10_SOM-for-Iris-Clustering
+This script applies a Self-Organizing Map (SOM) to cluster the Iris dataset. It begins by loading and exploring the dataset, checking for missing values and summarizing data distribution. The features are then standardized using StandardScaler before training a 10x10 SOM with a learning rate of 0.5 and a neighborhood radius of 1 over 100 iterations. Each data point is assigned to its closest neuron, forming clusters that are visualized using scatter plots. The model's clustering quality is evaluated by mapping clusters to original labels, calculating accuracy, and generating a confusion matrix, providing insights into how well the SOM distinguishes between different Iris species.
