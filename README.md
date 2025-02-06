@@ -28,3 +28,7 @@ This project focuses on data preprocessing and optimization, ensuring data quali
 
 ### Exercise7_MNIST-Classification-Report
 This report details the implementation of an MLP model for MNIST digit classification using TensorFlow and Keras. The dataset is preprocessed, and a validation set is extracted for model evaluation. The architecture includes three dense layers with ReLU and softmax activations. The model is trained using the Adam optimizer and categorical cross-entropy loss function, achieving high accuracy. Evaluation metrics, accuracy, and loss curves are analyzed, and sample predictions are visualized. Future enhancements may involve CNNs for improved performance.
+
+
+## Exercise8_Vehicle-Routing
+The code implements a genetic algorithm to optimize vehicle routing for package delivery, considering constraints such as vehicle capacity, route time limits, and priority deliveries. It initializes a population of possible routes, evaluates them using a fitness function that penalizes delays and overcapacity, and iteratively improves solutions through selection, crossover, and mutation. Each vehicle follows a route starting and ending at a central depot, with dynamically generated distances and traffic conditions influencing travel times. The algorithm evolves over multiple generations to find the most efficient routing solution, minimizing total distance and penalties.
