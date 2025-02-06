@@ -32,3 +32,7 @@ This report details the implementation of an MLP model for MNIST digit classific
 
 ## Exercise8_Vehicle-Routing
 The code implements a genetic algorithm to optimize vehicle routing for package delivery, considering constraints such as vehicle capacity, route time limits, and priority deliveries. It initializes a population of possible routes, evaluates them using a fitness function that penalizes delays and overcapacity, and iteratively improves solutions through selection, crossover, and mutation. Each vehicle follows a route starting and ending at a central depot, with dynamically generated distances and traffic conditions influencing travel times. The algorithm evolves over multiple generations to find the most efficient routing solution, minimizing total distance and penalties.
+
+
+## Exercise9_Recommender-System
+This code implements a Q-learning-based movie recommender system that adapts to user preferences through interaction. It defines a list of movies, each associated with multiple genres and popularity scores, and models user preferences based on their genre interests. A reinforcement learning agent selects movies using an epsilon-greedy strategy, updating Q-values based on user feedback. The reward function assigns positive or negative scores depending on how well a recommendation matches the user's interests. The system interacts with the user, refines recommendations over multiple iterations, and ultimately suggests movies based on learned preferences.
