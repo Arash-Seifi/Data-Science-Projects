@@ -1,6 +1,7 @@
 # Self-Organizing Map (SOM) for Iris Dataset Clustering
 
 This report details the application of a Self-Organizing Map (SOM) to cluster the Iris dataset.  The SOM is an unsupervised neural network that projects high-dimensional data onto a lower-dimensional grid, facilitating visualization and clustering.
+![reSult](https://github.com/user-attachments/assets/2921751e-2461-4cc9-9506-95e7c78d76a7)
 
 ## 1. Data Loading and Exploration
 
