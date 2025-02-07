@@ -41,3 +41,9 @@ This code implements a Q-learning-based movie recommender system that adapts to 
 
 ## Exercise10_SOM-for-Iris-Clustering
 This script applies a Self-Organizing Map (SOM) to cluster the Iris dataset. It begins by loading and exploring the dataset, checking for missing values and summarizing data distribution. The features are then standardized using StandardScaler before training a 10x10 SOM with a learning rate of 0.5 and a neighborhood radius of 1 over 100 iterations. Each data point is assigned to its closest neuron, forming clusters that are visualized using scatter plots. The model's clustering quality is evaluated by mapping clusters to original labels, calculating accuracy, and generating a confusion matrix, providing insights into how well the SOM distinguishes between different Iris species.
+
+
+## Exercise11_Custom-Kmeans
+Both codes detail a process for clustering student performance data.  The first report focuses on implementing a custom KMeans algorithm using a Manhattan distance metric, alongside standard KMeans with Euclidean distance, and uses the WCSS method to determine the optimal number of clusters.  It then visualizes the results using PCA.
+
+The second report expands on this by comparing multiple methods for determining the optimal number of clusters (K): the Elbow method, Silhouette method, Gap Statistic, and Dunn Index. It uses standard KMeans with Euclidean distance and visualizes the clustered data using PCA.  While both reports cover similar preprocessing steps (missing value imputation, one-hot encoding, and feature scaling), the second report emphasizes a more comprehensive approach to selecting the optimal K and uses standard KMeans whereas the first report implements a custom KMeans with Manhattan distance in addition to standard KMeans.  Essentially, the second report builds upon the first by adding more robust K selection methodologies and focusing solely on standard KMeans with Euclidean distance.
